@@ -5,6 +5,11 @@ Rails.application.routes.draw do
 
 resources :articles do
   resources :comments
+
+  resources :sessions, only: [:create]
+  get '/signin', to: 'sessions#new'
+  post '/logout', to: 'sessions#logout'
+  
 end
 
   root 'welcome#index'
