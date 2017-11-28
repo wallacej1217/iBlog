@@ -120,7 +120,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: purple;
+  background-color: #20c997;
 }
 
 [tabindex="-1"]:focus {
@@ -3502,7 +3502,8 @@ tbody.collapse.show {
       flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none;
+  list-style: georgian;
+  color: purple;
 }
 
 .nav-link {
@@ -3598,6 +3599,7 @@ tbody.collapse.show {
   -ms-flex-pack: justify;
       justify-content: space-between;
   padding: 0.5rem 1rem;
+
 }
 
 .navbar > .container,
@@ -3620,6 +3622,8 @@ tbody.collapse.show {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+  background-color: purple;
+
 }
 
 .navbar-brand:focus, .navbar-brand:hover {
