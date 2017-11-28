@@ -1,16 +1,14 @@
 <h1>Blog!</h1>
 
 
-<%= link_to 'My Blog', controller: 'articles' %>
 
-<%= link_to 'New article', new_article_path %>
 
 <% if user_signed_in? %>
   <li>
-  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+  <%= link_to('Logout', destroy_user_session_path, method: :delete, class: 'btn btn-primary') %>
   </li>
 <% else %>
   <li>
-  <%= link_to('Login', new_user_session_path)  %>
+  <%= link_to('Login', new_user_session_path, class: 'btn btn-primary') %>
   </li>
 <% end %>

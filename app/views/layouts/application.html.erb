@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+
+
     <title>IBlog</title>
-  
+
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -12,7 +15,12 @@
   <body>
     <p class="notice"><%= notice %></p>
      <p class="alert"><%= alert %></p>
+     
+     <%= render 'shared/navigation' %>
+
 
     <%= yield %>
   </body>
+
+
 </html>

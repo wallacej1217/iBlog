@@ -27,19 +27,28 @@
 <h2>Add a comment:</h2>
 <%= form_with(model: [ @article, @article.comments.build], local: true) do |form| %>
 
-<p>
+<div class="field form-group">
 <%= form.label :commenter %><br>
+<div class="col-sm-10">
 <%= form.text_field :commenter %>
-</p>
-<p>
+ </div>
+</div>
+
+<div class="field form-group">
   <%= form.label :body %><br>
+    <div class="col-sm-10">
   <%= form.text_area :body %>
-</p>
-<p>
+  </div>
+</div>
+
+<div class="actions form-group">
+  <div class="col-sm-offset-2 col-sm-10">
   <%= form.submit %>
-</p>
+   </div>
+</div>
+
 <% end %>
 
-<%= link_to 'Edit', edit_article_path(@article) %>
-<%= link_to "Back", articles_path %>
-<%= link_to "Home", welcome_index_path %>
+<%= link_to 'Edit', edit_article_path(@article), class: 'btn btn-success' %>
+<%= link_to "Back", articles_path, class: 'btn btn-success' %>
+<%= link_to "Home", welcome_index_path, class: 'btn btn-success' %>
